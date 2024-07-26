@@ -1,0 +1,9 @@
+
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\Projects> javac sumavg.java
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\Projects> java avg
+Enter three numbers:
+5
+6
+7
+Sum is:18
+Average is:6.0
