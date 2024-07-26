@@ -1,5 +1,0 @@
-PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61> javac sqrt.java
-PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61> java sqrt
-Enter a number:
-9
-root is:3.0
