@@ -1,0 +1,7 @@
+
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\Projects> javac sum.java
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\Projects> java sum
+Enter two numbers:
+5
+7
+Sum is:12
