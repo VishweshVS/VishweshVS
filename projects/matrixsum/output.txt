@@ -1,0 +1,16 @@
+Enter the no of Rows and Columns:
+2
+2
+Enter the elements of first matrix:
+3
+3
+3
+3
+Enter the elements of Second matrix:
+3
+3
+3
+3
+The sum is:
+	6			6				
+	6			6	
