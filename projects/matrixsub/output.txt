@@ -1,0 +1,27 @@
+Enter the no of Rows and Columns:
+3
+3
+Enter the elements of first matrix:
+8
+8
+8
+8
+8
+8
+8
+8
+8
+Enter the elements of Second matrix:
+2
+2
+2
+2
+2
+2
+2
+2
+2
+The difference is:
+	6			6			6		
+	6			6			6		
+	6			6			6	
