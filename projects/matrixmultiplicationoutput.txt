@@ -1,0 +1,50 @@
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\projects> & 'C:\Program Files\Java\jdk22\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp'
+'C:\Users\LENOVO\AppData\Roaming\Code\User\workspaceStorage\f5186612765eabc218cbe608d96cb
+cc9\redhat.java\jdt_ws\projects_cfa28522\bin' 'matrixmult'
+Enter the number of rows and columns in 1st matrix:
+3
+4
+Enter the number of rows and columns in 2nd matrix:
+4
+33
+Multiplication not possible
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\projects> & 'C:\Program Files\Java\jdk22\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp'
+'C:\Users\LENOVO\AppData\Roaming\Code\User\workspaceStorage\f5186612765eabc218cbe608d96cb
+cc9\redhat.java\jdt_ws\projects_cfa28522\bin' 'matrixmult'
+Enter the number of rows and columns in 1st matrix:
+3
+4
+Enter the number of rows and columns in 2nd matrix:
+4
+3
+Enter the elements of 1st matrix:
+1
+2
+3
+4
+5
+6
+7
+8
+22
+44
+5
+7
+Enter the elements of 2nd matrix:
+1
+4
+12
+4
+6
+7
+61
+10
+9
+15
+8
+13
+The product of matrix is:
+40 63 158 63
+88 141 401 144
+253 414 748 394
+137 316 889 317

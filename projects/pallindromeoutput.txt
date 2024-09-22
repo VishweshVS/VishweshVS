@@ -1,0 +1,12 @@
+sPS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\projects> & 'C:\Program Files\Java\jdk22\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp'
+'C:\Users\LENOVO\AppData\Roaming\Code\User\workspaceStorage\f5186612765eabc218cbe608d96cb
+cc9\redhat.java\jdt_ws\projects_cfa28522\bin' 'pallindrome'
+Enter the word:
+malayalam
+This is a pallindrome
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\projects> & 'C:\Program Files\Java\jdk22\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp'
+'C:\Users\LENOVO\AppData\Roaming\Code\User\workspaceStorage\f5186612765eabc218cbe608d96cb
+cc9\redhat.java\jdt_ws\projects_cfa28522\bin' 'pallindrome'
+Enter the word:
+malamuk
+This is not a palindrome

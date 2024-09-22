@@ -1,0 +1,22 @@
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\projects> c:; cd
+'c:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\projects'; & 'C:\Program Files\Java\jdk22\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp'
+'C:\Users\LENOVO\AppData\Roaming\Code\User\workspaceStorage\f5186612765eabc218cbe608d96cb
+cc9\redhat.java\jdt_ws\projects_cfa28522\bin' 'transposematrix'
+Enter the number of rows:
+3
+Enter the number of columns:
+3
+Enter the elements of matrix:
+1
+2
+3
+4
+5
+6
+1
+2
+3
+The transpose of matrix is:
+1 4 1
+2 5 2
+3 6 3

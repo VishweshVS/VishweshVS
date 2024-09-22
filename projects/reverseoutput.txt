@@ -1,0 +1,3 @@
+Enter the string you want reverse of: 
+hello 
+The reverse of string is: olleh 

@@ -1,0 +1,8 @@
+PS C:\Users\LENOVO\OneDrive\Desktop\Vishwesh61\projects> & 'C:\Program Files\Java\jdk22\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp'
+'C:\Users\LENOVO\AppData\Roaming\Code\User\workspaceStorage\f5186612765eabc218cbe608d96cb
+cc9\redhat.java\jdt_ws\projects_cfa28522\bin' 'frequency'
+Enter the string:
+Vishwesh
+Enter Character:
+s
+The character s has a frequency of 2
