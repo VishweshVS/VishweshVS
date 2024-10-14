@@ -1,0 +1,10 @@
+﻿
+
+OUTPUT:
+
+
+
+The number of sides of rectangle are 4
+The number of sides of triangle are 3
+The number of sides of hexagon are 5
+
