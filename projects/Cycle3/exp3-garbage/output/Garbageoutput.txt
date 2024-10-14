@@ -1,0 +1,6 @@
+﻿OUTPUT:
+
+
+
+Garbage collector called
+object is collected
