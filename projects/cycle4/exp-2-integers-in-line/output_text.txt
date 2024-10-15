@@ -1,0 +1,10 @@
+Enter Line of Integer
+123456
+All integer Degits :-> 
+6
+5
+4
+3
+2
+1
+Summation of all integer Degits :-> 21
