@@ -1,0 +1,6 @@
+﻿        				OUTPUT
+
+
+
+
+postfix evaluation: -4
