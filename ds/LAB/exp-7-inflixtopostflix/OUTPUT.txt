@@ -1,0 +1,7 @@
+﻿        				OUTPUT
+
+
+
+
+Enter the equation:a+b*(c^d-e)^(f+g*h)-i
+abc^de-
