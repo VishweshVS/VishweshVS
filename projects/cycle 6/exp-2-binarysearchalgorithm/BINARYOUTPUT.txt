@@ -1,0 +1,17 @@
+                                            OUTPUT
+
+
+
+Enter the length of array:
+5
+
+Enter the elements of array:
+1
+2
+3
+4
+5
+6
+Enter element to be searched:
+4
+Element found at index 3
