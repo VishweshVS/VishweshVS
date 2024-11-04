@@ -1,0 +1,15 @@
+                          OUTPUT
+
+
+
+Enter the number of names:
+3
+
+Enter the names:
+vishwesh
+arjun
+ajay
+The names in alphabetical order are: 
+ajay
+arjun
+vishwesh
