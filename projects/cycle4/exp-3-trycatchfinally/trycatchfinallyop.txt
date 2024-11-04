@@ -1,0 +1,19 @@
+								Output
+
+Welcome to the program, today will seeing how to use try, catch, finally blocks and by understanding their functions.
+
+There is an equation a/(b-c), which requires the initialization of the variables. You must initialize them:
+
+<HINT:If you want the exception to be caught, then try initializing the values of b & c such that their difference is zero.>
+
+a:
+12
+
+b:
+3
+
+c:
+3
+Exception caught:Division by zero
+I am in final block
+
