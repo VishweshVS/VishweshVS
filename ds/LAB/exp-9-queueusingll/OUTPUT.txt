@@ -1,0 +1,6 @@
+
+            OUTUT:
+
+
+Queue front:20
+Queue rear:50
