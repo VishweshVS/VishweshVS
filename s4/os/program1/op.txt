@@ -1,0 +1,6 @@
+Inside child process with process id:6045
+Thursday 23 January 2025 05:30:25 PM IST
+
+Inside the parent process with ID:6044
+Child Process created Successfully
+

@@ -1,0 +1,3 @@
+Enter the directory name:
+vishwesh
+6711579	2.c6711439	a.out6684999	..6711609	.

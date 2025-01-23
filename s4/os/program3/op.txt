@@ -1,0 +1,4 @@
+Enter the content:
+hello   
+The contents are:
+hello
