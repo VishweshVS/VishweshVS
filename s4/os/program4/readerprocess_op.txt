@@ -1,0 +1,7 @@
+Key of shared memory is20
+Process attached at 0x70fc9add4000
+Data read from memory:
+hello
+
+Sum is 116
+

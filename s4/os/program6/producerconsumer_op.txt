@@ -1,0 +1,64 @@
+﻿1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+1
+PRODUCER PRODUCES ITEM: 1
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+1
+PRODUCER PRODUCES ITEM: 2
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+1
+PRODUCER PRODUCES ITEM: 3
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+1
+
+The Buffer is full.
+
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+2
+CONSUMER CONSUMES ITEM: 3
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+2
+CONSUMER CONSUMES ITEM: 2
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+2
+CONSUMER CONSUMES ITEM: 1
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+2
+
+The Buffer is empty.
+
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+1
+PRODUCER PRODUCES ITEM: 1
+1.Producer
+2.Consumer
+3.Exit
+ENTER THE CHOICE:
+3
+

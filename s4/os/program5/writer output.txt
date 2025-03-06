@@ -1,0 +1,7 @@
+﻿Key of shared memory is: 20
+Process attached at 0x704082ebd000
+Write data to memory:
+hello
+Writtern data is:
+hello
+
