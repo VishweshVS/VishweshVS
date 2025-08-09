@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Notes</title>
+</head>
+<body>
+    <h1>Upload Notes</h1>
+    <form id="uploadForm">
+        <label>Title:</label><br>
+        <input type="text" id="title" required><br><br>
+
+        <label>Semester:</label><br>
+        <input type="number" id="semester" required><br><br>
+
+        <label>Upload File:</label><br>
+        <input type="file" id="file" accept=".pdf,.doc,.docx,.ppt,.pptx" multiple required><br><br>
+
+        <button type="submit" >Upload</button>
+    </form>
+
+    <script>
+        document.getElementById("uploadForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            let fileInput = document.getElementById("file");
+            let files = fileInput.files;
+            const allowedTypes = [
+                "application/pdf",
+                "application/msword",
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "application/vnd.ms-powerpoint",
+                "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+            ];
+
+            let filesMeta = [];
+            let filesToRead = [];
+            for (let i = 0; i < files.length; i++) {
+                if (!allowedTypes.includes(files[i].type)) {
+                    alert("Invalid file type. Please upload a PDF, DOC, DOCX, PPT, or PPTX file.");
+                    return;
+                }
+                filesMeta.push({
+                    name: files[i].name,
+                    type: files[i].type,
+                    size: files[i].size
+                });
+                filesToRead.push(files[i]);
+            }
+
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+            let newNote = {
+                title: document.getElementById("title").value,
+                semester: document.getElementById("semester").value,
+                files: filesMeta
+            };
+
+            // Read all files as base64 and store in sessionStorage
+            let readers = [];
+            let filesBase64 = [];
+            let filesRead = 0;
+            for (let i = 0; i < filesToRead.length; i++) {
+                let reader = new FileReader();
+                readers.push(reader);
+                reader.onload = function(e2) {
+                    // Remove the prefix "data:...;base64," to store only base64
+                    let base64 = e2.target.result.split(',')[1];
+                    // Use the next note index (notes.length) for sessionStorage key
+                    sessionStorage.setItem(`note_${notes.length}_file_${i}`, base64);
+                    filesRead++;
+                    if (filesRead === filesToRead.length) {
+                        // All files read, now save note and redirect
+                        notes.push(newNote);
+                        localStorage.setItem("notes", JSON.stringify(notes));
+                        alert("Note uploaded!");
+                        window.location.href = "website1.html";
+                    }
+                };
+                reader.readAsDataURL(filesToRead[i]);
+            }
+            // If no files, just save note
+            if (filesToRead.length === 0) {
+                notes.push(newNote);
+                localStorage.setItem("notes", JSON.stringify(notes));
+                alert("Note uploaded!");
+                window.location.href = "website1.html";
+            }
+        });
+    </script>
+</body>
+</html>
