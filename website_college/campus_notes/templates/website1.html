@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Notes Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1>Campus Notes Hub</h1>
+        <ul id="navLinks">
+            <!-- This will be filled by JavaScript -->
+        </ul>
+    </nav>
+</header>
+
+
+<section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search notes...">
+    <button onclick="searchNotes()">Search</button>
+</section>
+
+<section class="notes-list" id="notesList">
+    <h1>Available Notes</h1>
+</section>
+
+<footer>
+    <p>© 2025 Campus Notes Hub | Made with ❤️ for Our College</p>
+</footer>
+
+<script>
+  fetch('/notes')
+  .then(res => res.json())
+  .then(data => {
+      let notesList = document.getElementById("notesList");
+      data.forEach(note => {
+          let noteItem = document.createElement("div");
+          noteItem.classList.add("note-item");
+          noteItem.innerHTML = `
+              <h2>${note.title}</h2>
+              <p>Uploaded by: ${note.uploader}</p>
+              <p>Date: ${note.date_uploaded}</p>
+              <a href="/download/${note.filename}" download="${note.originalname}">
+                <button>Download</button>
+              </a>
+              <br>
+              
+          `;
+          notesList.appendChild(noteItem);
+      });
+  })
+  .catch(err => console.error("Failed to load notes:", err));
+
+function updateNavbar() {
+    fetch('/check_login')
+    .then(res => res.json())
+    .then(data => {
+        let nav = document.getElementById("navLinks");
+        nav.innerHTML = ""; // Clear existing links
+
+        if (data.logged_in) {
+            // Logged in: show Upload + Logout
+            nav.innerHTML += `<li>Welcome, ${data.username}</li>`;
+            nav.innerHTML += `<li><a href="/upload_page">Upload</a></li>`;
+            nav.innerHTML += `<li><a href="/logout">Logout</a></li>`;
+        } else {
+            // Not logged in: show Login + Register
+            nav.innerHTML += `<li><a href="/login">Login</a></li>`;
+            nav.innerHTML += `<li><a href="/register">Register</a></li>`;
+        }
+    })
+    .catch(err => console.error("Navbar update failed:", err));
+}
+
+window.onload = function() {
+    updateNavbar();
+    loadNotes(); // Keep your existing notes loading function here
+};
+</script>
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
