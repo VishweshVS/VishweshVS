@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @VishweshVS
+- 👋 Hi, I’m @VishweshVS, a 2005-born Self-Motivated Coding Enthusiast seeking for heightening coding experiences, in Python let the frameworks be Django,React, or Node.js. I'm always hyped for a better dilligence work.
 - 👀 I’m interested in AI and Robotics
 - 🌱 I’m currently learning Computer Science with AI at Adhi Shankara Institute of Engineering and Technology at Kaladi
 - 💞️ I’m looking to collaborate on ...
